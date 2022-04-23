@@ -167,6 +167,15 @@ header ul li a{
     background: #017143;
     clip-path: circle(600px at right 800px);
 }
+.rodapé{
+    background-color: #017143;
+    padding: 10px
+}
+.rodapé p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 

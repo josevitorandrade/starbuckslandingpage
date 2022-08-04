@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks website Landing page</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <!-- CSS only -->
+   
+
+
 </head>
 <body>
     
 
     <section>
+      
         <div class="circle"></div>
         <header>
+          
+            
                <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
-                <ul>
+
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+                <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#">Oque há de novo</a></li>
+                    <li><a href="#">Oque há de novo</a>
+                    </li>
                     <li><a href="#">Contato</a></li>
                 </ul>
         </header>
@@ -56,12 +67,29 @@
         const circle = document.querySelector('.circle');
         circle.style.background = color;
     }
+
+    function toggleMenu(){
+
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    
+        
+
+
+
+    }
+
+      
         
 </script>
 
 <div class="rodapé">
     <p> TODOS OS DIREITOS RESERVADOS - &copy; JV ANDRADE 2022</p>
 </div>
+
+<script src="https://kit.fontawesome.com/5c1b2dbab2.js" crossorigin="anonymous"></script>
 
 
 
